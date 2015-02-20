@@ -52,4 +52,11 @@ public class ArrayListInt
             add(valor);
         }
     }
+    
+    /**
+     * Elimina la coleccion, y crea una vacia
+     */
+    public void clear(){
+        arrayDeEnteros = new int[0];
+    }
 }
