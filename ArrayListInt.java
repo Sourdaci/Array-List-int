@@ -78,4 +78,17 @@ public class ArrayListInt
         }
         return existe;
     }
+    
+    /**
+     * Devuelve el entero almacenado en la posicion indicada
+     * Las posiciones comienzan en CERO
+     * Si esa posicion no existe, devuelve -1
+     */
+    public int get(int index){
+        int valor = -1;
+        if (index >= 0 && index < arrayDeEnteros.length){
+            valor = arrayDeEnteros[index];
+        }
+        return valor;
+    }
 }
