@@ -118,4 +118,16 @@ public class ArrayListInt
         }
         return posicion;
     }
+    
+    /**
+     * Devuelve true si no hay enteros guardados
+     * Devuelve false si hay algun elemento guardado
+     */
+    public boolean isEmpty(){
+        boolean empty = false;
+        if(arrayDeEnteros.length == 0){
+            empty = true;
+        }
+        return empty;
+    }
 }
