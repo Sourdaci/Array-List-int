@@ -130,4 +130,11 @@ public class ArrayListInt
         }
         return empty;
     }
+    
+    /**
+     * Devuelve cuantos enteros hay en la coleccion
+     */
+    public int size(){
+        return arrayDeEnteros.length;
+    }
 }
