@@ -59,4 +59,23 @@ public class ArrayListInt
     public void clear(){
         arrayDeEnteros = new int[0];
     }
+    
+    /**
+     * Busca el elemento pedido
+     * Si existe, devuelve true
+     * Si no existe, devuelve false
+     */
+    public boolean contains(int elemento){
+        boolean existe = false;
+        int contador = 0;
+        int longitud = arrayDeEnteros.length;
+        while (!existe && contador < longitud){
+            if(arrayDeEnteros[contador] == elemento){
+                existe = true;
+            }else{
+                contador++;
+            }
+        }
+        return existe;
+    }
 }
