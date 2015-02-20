@@ -137,4 +137,27 @@ public class ArrayListInt
     public int size(){
         return arrayDeEnteros.length;
     }
+    
+    /**
+     * Elimina el elemento de la posicion indicada
+     * Si la posicion existe, devuelve el elemento
+     * Si la posicion no existe, devuelve -1
+     */
+    public int remove(int index){
+        int valor = -1;
+        int longitud = arrayDeEnteros.length;
+        if (index >= 0 && index < longitud){
+            int[] arrayTemp = new int[longitud - 1];
+            int contador = 0;
+            for (; contador < index; contador++){
+                arrayTemp[contador] = arrayDeEnteros[contador];
+            }
+            valor = arrayDeEnteros[contador];
+            for (; contador < longitud - 1; contador++){
+                arrayTemp[contador] = arrayDeEnteros[contador + 1];
+            }
+            arrayDeEnteros = arrayTemp;
+        }
+        return valor;
+    }
 }
