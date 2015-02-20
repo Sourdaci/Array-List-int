@@ -100,4 +100,22 @@ public class ArrayListInt
             arrayDeEnteros[index] = element;
         }
     }
+    
+    /**
+     * Devuelve la primera posicion del elemento buscado
+     * Si el elemento no existe, se devuelve -1
+     */
+    public int indexOf(int elemento){
+        int posicion = -1;
+        int contador = 0;
+        int longitud = arrayDeEnteros.length;
+        while (posicion == -1 && contador < longitud){
+            if(arrayDeEnteros[contador] == elemento){
+                posicion = contador;
+            }else{
+                contador++;
+            }
+        }
+        return posicion;
+    }
 }
