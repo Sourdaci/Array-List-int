@@ -124,11 +124,7 @@ public class ArrayListInt
      * Devuelve false si hay algun elemento guardado
      */
     public boolean isEmpty(){
-        boolean empty = false;
-        if(arrayDeEnteros.length == 0){
-            empty = true;
-        }
-        return empty;
+        return (arrayDeEnteros.length == 0);
     }
     
     /**
