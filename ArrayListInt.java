@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 /**
  * Coleccion de enteros
  * Interfaz ArrayList
@@ -22,11 +22,7 @@ public class ArrayListInt
      */
     public void add(int valor){
         int longitudBase = arrayDeEnteros.length;
-        int[] nuevoArray = new int[(longitudBase + 1)];
-        for (int i = 0; i < longitudBase; i++){
-            nuevoArray[i] = arrayDeEnteros[i];
-        }
-        nuevoArray[longitudBase] = valor;
-        arrayDeEnteros = nuevoArray;
+        arrayDeEnteros = Arrays.copyOf(arrayDeEnteros, (longitudBase + 1));
+        arrayDeEnteros[longitudBase] = valor;
     }
 }
