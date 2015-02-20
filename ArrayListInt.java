@@ -91,4 +91,13 @@ public class ArrayListInt
         }
         return valor;
     }
+    
+    /**
+     * Cambia el valor del elemento de la posicion indicada
+     */
+    public void set(int index, int element){
+        if(index >= 0 && index < arrayDeEnteros.length){
+            arrayDeEnteros[index] = element;
+        }
+    }
 }
