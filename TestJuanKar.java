@@ -5,11 +5,11 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Test
+public class TestJuanKar
 {
     private ArrayListInt array;
     
-    public Test(){
+    public TestJuanKar(){
         array = new ArrayListInt();
         
         //Iremos probando metodo por metodo que todo funciona bien
